@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>PassForge</title>
+    <link rel="icon" type="image/x-icon" href="images/cadeado_Cyberpunk.png">
+</head>
+
+<body>
+    <div id="container">
+        <img src="images/cadeado_Cyberpunk.png" id="lock" alt="Cadeado Cyberpunk" />
+        <h1 id="title">PassForge</h1>
+        <h3 id="subtitle">Gerador de Senhas seguras e personalizáveis</h3>
+
+        <div id="password_container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-regular fa-clipboard"></i>
+            </button>
+        </div>
+
+        <div id="password_items">
+            <div class="item">
+                <input id="size" name="size" type="number" min="4" max="128" value="12" />
+                <label for="size"> Quantidade de caracteres </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_uppercase" id="include_uppercase" checked />
+                <label for="include_uppercase"> Incluir letras maiúsculas </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_lowercase" id="include_lowercase" checked />
+                <label for="include_lowercase"> Incluir letras minúsculas </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_numbers" id="include_numbers" checked />
+                <label for="include_numbers"> Incluir números </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_symbols" id="include_symbols" />
+                <label for="include_symbols"> Incluir símbolos </label>
+            </div>
+            <button id="generate">Gerar Senha</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

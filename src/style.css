@@ -1,0 +1,203 @@
+/* Importa fonte */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+:root {
+  --bg-gradient: linear-gradient(120deg, #23243a 0%, #230f27 60%, #d5e91d 100%);
+  --primary-color: #18181b;
+  --secondary-color: #23232b;
+  --accent-color: #e91d1d;
+  --accent-hover: #ffd600;
+  --danger-color: #ff1744;
+  --text-color: #e0e0e0;
+  --border-radius: 10px;
+  --border-cyber: 2px solid #1de9e9;
+  --transition-duration: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  background: var(--primary-color);
+  padding: 36px 26px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  max-width: 420px;
+  width: 100%;
+  border: var(--border-cyber);
+  position: relative;
+}
+
+#lock {
+  width: 140px;
+  height: 140px;
+  background: none;
+}
+
+#title {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 2.1rem;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px #000a;
+}
+
+#password_container {
+  width: 100%;
+  max-width: 400px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 10px 18px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px #1de9b622;
+  margin-bottom: 16px;
+  border: 1.5px solid #333;
+}
+
+#password_container.show {
+  display: flex;
+}
+
+#password {
+  color: var(--accent-color);
+  font-size: 1.15rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
+  letter-spacing: 1px;
+}
+
+#copy {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  transition: color var(--transition-duration);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copy:hover {
+  color: var(--accent-hover);
+}
+
+#password_items {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  box-shadow: 0 2px 8px #1de9b622;
+  border: 1.5px solid #333;
+}
+
+.item,
+#password_items > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+  font-family: "Orbitron", "Segoe UI", Arial, sans-serif;
+}
+
+input[type="number"] {
+  width: 60px;
+  text-align: center;
+  border: 1.5px solid #1de9b6;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-size: 1rem;
+  background: #222;
+  color: var(--accent-color);
+  transition: border-color var(--transition-duration);
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--accent-hover);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-color);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#generate {
+  background: var(--accent-color);
+  border: none;
+  margin-top: 16px;
+  padding: 12px 0px;
+  border-radius: 5px;
+  color: #18181b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+  box-shadow: 0 2px 8px #1de9b622;
+  letter-spacing: 1px;
+}
+
+#generate:hover {
+  background: var(--accent-hover);
+  color: #23232b;
+}
+
+@media (max-width: 500px) {
+  #container,
+  #password_items,
+  #password_container {
+    max-width: 98vw;
+    padding: 12px;
+  }
+  #title {
+    font-size: 1.3rem;
+  }
+  #lock {
+    width: 80px;
+    height: 80px;
+  }
+  #password {
+    max-width: 120px;
+    font-size: 0.95rem;
+  }
+}
