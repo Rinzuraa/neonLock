@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
 :root {
-  --bg-gradient: linear-gradient(120deg, #23243a 0%, #230f27 60%, #d5e91d 100%);
+  --bg-gradient: linear-gradient(120deg, #000000 0%, #191a16 60%, #14474b 100%);
   --primary-color: #18181b;
   --secondary-color: #23232b;
-  --accent-color: #e91d1d;
+  --accent-color: #1de9e9;
   --accent-hover: #ffd600;
   --danger-color: #ff1744;
   --text-color: #e0e0e0;
   --border-radius: 10px;
-  --border-cyber: 2px solid #1de9e9;
+  --border-cyber: 2px solid #b8c503;
   --transition-duration: 0.2s;
 }
 
@@ -45,8 +45,8 @@ body {
 }
 
 #lock {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   background: none;
 }
 
@@ -140,9 +140,9 @@ label {
 input[type="number"] {
   width: 60px;
   text-align: center;
-  border: 1.5px solid #1de9b6;
+  border: 1.5px solid #1de9e9;
   border-radius: 5px;
-  padding: 6px 8px;
+  padding: 8px 10px;
   font-size: 1rem;
   background: #222;
   color: var(--accent-color);
