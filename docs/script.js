@@ -69,7 +69,7 @@ function message(text, status = "sucess") {
     style: {
       background:
         status === "sucess"
-          ? "linear-gradient(to right, #00b09b, #96c93d)"
+          ? "Green"
           : "#dc2626",
       boxShadow: "none",
     },

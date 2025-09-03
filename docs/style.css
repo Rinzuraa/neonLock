@@ -50,6 +50,13 @@ body {
   background: none;
 }
 
+#lock:hover {
+  filter: drop-shadow(0 0 3px var(--accent-color));
+  transform: scale(1.05);
+  transition: transform var(--transition-duration),
+    filter var(--transition-duration);
+}
+
 #title {
   color: var(--accent-color);
   font-weight: 500;
