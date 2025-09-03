@@ -1,6 +1,6 @@
 # 🔐 NeonLock – Gerador de Senhas Seguras e Personalizáveis
 
-Se você é paranoico com suas senhas como eu, **PassForge** é a solução perfeita!  
+Se você é paranoico com suas senhas como eu, **NeonLock** é a solução perfeita!  
 Um gerador de senhas **aleatórias**, **seguras** e **totalmente personalizáveis**, desenvolvido com **HTML, CSS e JavaScript**, além do **Toastify** para notificações rápidas e elegantes.  
 
 💡 **Inspiração:** Este projeto foi inspirado em elementos **Cyberpunk**, trazendo uma interface futurista e estilizada.
